@@ -18,6 +18,9 @@ server.use(bodyParser.json());
 // allows for objects and arrays to be encoded
 server.use(bodyParser.urlencoded({ extended: true }));
 
+
+
+//our endpoint will hit api then pass to router
 // routes requests to '/api' endpoint to our router
 server.use('/api', router);
 
